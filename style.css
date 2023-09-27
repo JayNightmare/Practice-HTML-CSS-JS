@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Open+Sans');
+
+:root {
+  --background-color-primary: black;
+  --body-font: roboto;
+  --color-grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  font-family: var(--body-font), sans-serif;
+  background: black;
+}
+
+.bg-sd-1 {
+  width: calc(1080px / 2);
+  height: calc(1080px / 2);
+  border-radius: 10px;
+}
+
+.bg-sd-2 {
+  width: fit-content;
+  height: fit-content;
+}
+
+.bg-color-123 {
+  background-color: var(--background-color-primary);
+}
+
+.background-position-2134 { /* */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-sd-2 > p { /* color of text */
+  color: white;
+  text-align: center;
+}
+
+.behind-bg {
+  height: calc(1080px/1.95);
+  width: calc(1080px/1.95);
+  border-radius: 10px;
+}
+
+.blur-926 {
+  filter: blur(3px);
+}
+
+.color-grad {
+  background: rgba(2, 0, 36, 1);
+  
+  transition: 0.5s ease-in-out;
+}
+
+.color-grad:hover {
+  background: rgba(0,212,255,1);
+  background-size: 1000% 1000%;
+  
+  transition: 0.5s ease-in-out;
+}
+
+.inputbox-209 {
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+  /* ----- */
+  transition: 0.2s ease-out;
+  background-color: #F6F6F6;
+}
+
+.inputbox-209:hover {
+  box-shadow: 0 0 15px 5px #B80884;
+  transition: 0.2s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* DO NOT TOUCH */
+@keyframes Background-Animation {
+  0%{background-position:0% 70%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 20%}
+}
